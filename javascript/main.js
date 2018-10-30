@@ -6,8 +6,10 @@
       function init() {
         Tabletop.init( { key: public_spreadsheet_url,
                          callback: showInfo,
-                         simpleSheet: true } )
+                         simpleSheet: true
+                       } )
       }
+
 
       function showInfo(data, tabletop) {
 
@@ -41,7 +43,6 @@
           obj = [data.State, Number(data.SARs)];
           return obj;
         })
-
 
         drawChart(one,two,three);
         drawRegionsMap(four)
